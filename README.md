@@ -1,5 +1,5 @@
 # H-alfaSSed
-Hydrogen-alfa Sensor Stream editor
+Hydrogen-αlfa Sensor Stream editor
 
 Imaging sensors based upon the IMX178 and IMX183 from Sony have a particularly hard time 
 with long wavelength monochromatic images. The resulting images will often contain a 
