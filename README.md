@@ -1,4 +1,4 @@
-# H-alfaSSed
+# H-αlfaSSed
 Hydrogen-αlfa Sensor Stream editor
 
 Imaging sensors based upon the IMX178 and IMX183 from Sony have a particularly hard time 
