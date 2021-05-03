@@ -55,8 +55,12 @@ This problem may be minimal, or it might produce unacceptable results.
 
 Third, even after correction, there is still some observed error.  Usually this is inconsequential as the signal
 from the grid error is usually attenuated sufficiently to allow image stacking without loss of detail.  As the
-images are stacked, the grid error is usually removed through the stacking process.  To see this residual error,
-you can look at the corrected image above.  Near the limb of the sun, some of the pixels are too bright, whereas near
+images are stacked, the grid error is usually removed through the stacking process.  
+
+Here is an animation showing the residual error:
+![alt text](https://raw.githubusercontent.com/zenmetsu/H-alfaSSed/master/comparison.gif)
+
+Near the limb of the sun, some of the pixels are too bright, whereas near
 the center of the disc the same channel is too dark.  There appears to be a sweet spot where the correction is perfect.
 This will require some additional testing to iron out, and most likely more robust statistical analysis of the channel
 data will be required.
