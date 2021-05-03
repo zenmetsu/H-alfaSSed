@@ -73,7 +73,7 @@ int main(int argc, char* argv[]) {
 
 static void show_usage() {
 	std::cout <<
-	        "Hydrogen-alfa Sony Sensor error deleter"
+	        "Hydrogen-alfa Ser Stream editor"
 	        "Usage: H-alfaSSed [OPTION]... --infile [SERFILE] --outfile [OUTFILE]\n"
                 "Correct SERFILE and generate OUTFILE\n\n"
 
