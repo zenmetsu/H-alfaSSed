@@ -11,7 +11,9 @@ bias, and then write a new .SER with the corrected data.
 
 
 Despite being monochrome sensors, the monochrome variants of the IMX178 and IMX183 appear to have
-pixel bias which resembles a typical bayer mask.  Here is an example of an image exhibiting the problem:
+pixel bias which resembles a typical bayer mask.  
+
+Here is an example of an image exhibiting the problem:
 ![alt text](https://raw.githubusercontent.com/zenmetsu/H-alfaSSed/master/source.png)
 
 
@@ -38,6 +40,9 @@ appear to have 1/4 the sensor resolution, with details lost due to the image sta
 
 This utility works by debayering each frame of the .ser file, normalizing the red and blue channels to match
 the observed green channel data, prior to writing a corrected output file.  
+
+Here is the frame of data from before, with the necessary corrections applied:
+![alt text](https://raw.githubusercontent.com/zenmetsu/H-alfaSSed/master/output.png)
 
 ## CAVEATS
 
