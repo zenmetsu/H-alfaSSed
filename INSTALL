@@ -1,0 +1,36 @@
+Requirements
+============
+
+* A C++11 compliant compiler with complete support of C++11 regex (e.g., GCC 4.9 meets the minimum feature set required to build the package)
+* CMake build system
+* Currently the framework can be built on Linux only
+
+Dependencies
+============
+
+* libopencv
+
+Build
+=====
+
+The project is using CMake as a build system. To build and install the package, execute the following commands in the root directory of the project:
+
+  mkdir build
+  cd build
+	cmake ..
+	make
+	sudo make install 
+
+If your default compiler does not meet the minimum feature set required to build the package, you may specify alternative compiler as follows:  
+
+	CC=gcc-4.9 CXX=g++-4.9 cmake .
+	make
+	sudo make install 
+
+In default configuration, the package will be installed with prefix `/usr`. If you want to change the prefix, you may specify it as follows:
+
+	cmake -DCMAKE_INSTALL_PREFIX:PATH=/usr/local .
+	make
+	sudo make install 
+
+For more information see documentation available on official [CMake site](http://www.cmake.org/documentation/).
