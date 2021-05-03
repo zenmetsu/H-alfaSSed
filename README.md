@@ -20,8 +20,8 @@ Here is an example of an image exhibiting the problem:
 To explain this better, we must de-bayer the image
 with the following pixel format:
 
-RED GRN
-GRN BLU
+        RED GRN
+        GRN BLU
 
 The de-bayer process is simple, one need only apply a modulo function to the row and column number.  
 The red channel is represented by pixels where the row and column are even. The blue channel is
