@@ -51,16 +51,13 @@ loss of dynamic range.  This cannot be helped.  As a consequence, it is best to 
 range at time of capture.
 
 Second, if any pixels are overexposed, it will introduce error into the red and blue channel correction values.
-This problem may be minimal, or it might produce unacceptable results.
-
-Third, even after correction, there is still some observed error.  Usually this is inconsequential as the signal
+This problem may be minimal, or it might produce unacceptable results. Often this is inconsequential as the signal
 from the grid error is usually attenuated sufficiently to allow image stacking without loss of detail.  As the
-images are stacked, the grid error is usually removed through the stacking process.  
+images are stacked, the residual grid error should be removed through the stacking process.  
 
-Here is an animation showing the residual error:
+Here is an animation showing the residual error from an overexposed/clipped red channel:
 ![alt text](https://raw.githubusercontent.com/zenmetsu/H-alfaSSed/master/comparison.gif)
 
 Near the limb of the sun, the red channel remains too bright, whereas near
 the center of the disc the same channel is too dark.  There appears to be a sweet spot where the correction is perfect.
-This will require some additional testing to iron out, and most likely more robust statistical analysis of the channel
-data will be required.
+Fortunately, this problem can be avoided by simply taking care when setting exposure at time of capture.
