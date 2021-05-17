@@ -201,7 +201,7 @@ void unfux_frame(std::ifstream& serFile, std::ofstream& outFile, uint64_t curren
                                                 g1++;
 						c0++;
                                         } else {
-						arrayCorrected.at(c0)=(int16_t)blueCor*arrayB0.at(b0);
+						arrayCorrected.at(c0)=(int16_t)(blueCor*arrayB0.at(b0));
                                                 b0++;
 						c0++;
                                         }
